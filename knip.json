@@ -1,0 +1,8 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "entry": ["src/app/**/*.{js,jsx,ts,tsx}", "scripts/**/*.ts"],
+  "project": ["src/**/*.{js,jsx,ts,tsx}", "scripts/**/*.ts"],
+  "expo": true,
+  "ignoreBinaries": ["maestro", "xcrun"],
+  "ignoreDependencies": ["expo-mcp", "ultracite"]
+}
