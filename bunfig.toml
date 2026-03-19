@@ -3,3 +3,6 @@ preload = ["./bun.setup.ts"]
 
 [loader]
 ".flow" = "text"
+
+[install]
+exact = true
