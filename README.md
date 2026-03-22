@@ -118,7 +118,7 @@ bun test:e2e:app
 Run linting, type checks, Knip, package format validation, and unit tests together.
 
 ```bash
-bun check-all
+bun codesweep:check
 ```
 
 ### Quality Gate (Auto Fix)
@@ -126,7 +126,7 @@ bun check-all
 Apply automatic fixes, then run type checks, Knip, package format validation, and unit tests.
 
 ```bash
-bun check-all:fix
+bun codesweep:fix
 ```
 
 ### Version Management

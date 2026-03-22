@@ -28,8 +28,8 @@
     "test:unit:coverage": "bun test --coverage",
     "test:e2e:web": "playwright test",
     "test:e2e:app": "time maestro test e2e/app/",
-    "check-all": "bun scripts/check-all.ts",
-    "check-all:fix": "bun scripts/check-all.ts fix",
+    "codesweep:check": "bunx codesweep check",
+    "codesweep:fix": "bunx codesweep fix",
     "react-doctor": "bunx -y react-doctor@latest .",
     "version-manager": "bun scripts/version-manager.ts",
     "rulesync": "bunx rulesync generate",
@@ -61,7 +61,7 @@
     "@types/react": "19.2.14",
     "@typescript/native-preview": "7.0.0-dev.20260314.1",
     "bun-types": "1.3.10",
-    "concurrently": "9.2.1",
+    "codesweep": "github:tzwzx/codesweep",
     "expo-doctor": "1.18.12",
     "expo-mcp": "0.2.4",
     "knip": "5.86.0",
@@ -71,8 +71,7 @@
     "react-test-renderer": "19.2.0",
     "syncpack": "14.2.0",
     "typescript": "5.9.3",
-    "ultracite": "7.3.1",
-    "yaml": "2.8.2"
+    "ultracite": "7.3.1"
   },
   "engines": {
     "bun": "1.x",
