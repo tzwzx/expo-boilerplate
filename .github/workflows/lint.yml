@@ -19,8 +19,8 @@ jobs:
       - name: Run tsc
         run: bun tsc
 
-      - name: Run package-lint-semver-ranges
-        run: bun package-lint-semver-ranges
+      - name: Run syncpack:lint
+        run: bun syncpack:lint
 
       - name: Run knip
         run: bun knip

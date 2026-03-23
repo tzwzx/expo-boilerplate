@@ -78,7 +78,7 @@ bun tsc
 Validate semver ranges in `package.json` with Syncpack.
 
 ```bash
-bun package-lint-semver-ranges
+bun syncpack:lint
 ```
 
 ### Detect Unused Code

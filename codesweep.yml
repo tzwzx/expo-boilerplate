@@ -1,7 +1,7 @@
 check:
   - parallel:
       - bun lint
-      - bun package-lint-semver-ranges
+      - bun syncpack:lint
       - bun tsc
       - bun knip
       - bun test:unit
@@ -10,7 +10,7 @@ fix:
   - sequential:
       - bun fix
   - parallel:
-      - bun package-lint-semver-ranges
+      - bun syncpack:fix
       - bun tsc
       - bun knip
       - bun test:unit
