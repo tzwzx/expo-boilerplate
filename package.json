@@ -32,7 +32,6 @@
     "codesweep:check": "bunx codesweep check",
     "codesweep:fix": "bunx codesweep fix",
     "react-doctor": "bunx -y react-doctor@latest .",
-    "version-manager": "bun scripts/version-manager.ts",
     "rulesync": "bunx rulesync generate",
     "postinstall": "lefthook install && bun rulesync"
   },

@@ -7,19 +7,28 @@
     "development": {
       "developmentClient": true,
       "distribution": "internal",
-      "channel": "development"
+      "channel": "development",
+      "ios": {
+        "autoIncrement": true
+      }
     },
     "preview": {
       "distribution": "internal",
       "channel": "preview",
       "env": {
         "APP_ENV": "preview"
+      },
+      "ios": {
+        "autoIncrement": true
       }
     },
     "production": {
       "channel": "production",
       "env": {
         "APP_ENV": "production"
+      },
+      "ios": {
+        "autoIncrement": true
       }
     }
   },

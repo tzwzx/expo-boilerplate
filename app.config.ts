@@ -1,9 +1,8 @@
 import type { ExpoConfig } from "expo/config";
 
-const APP_NAME = "Expo Boilerplate";
+import { version } from "./package.json";
 
-const APP_VERSION = "0.1.0";
-const IOS_BUILD_NUMBER = "1";
+const APP_NAME = "Expo Boilerplate";
 
 // oxlint-disable-next-line unicorn/no-anonymous-default-export
 export default (): ExpoConfig => ({
@@ -19,7 +18,6 @@ export default (): ExpoConfig => ({
   icon: "./assets/images/icon.png",
   ios: {
     appleTeamId: "YOUR_TEAM_ID",
-    buildNumber: IOS_BUILD_NUMBER,
     bundleIdentifier: "com.example.expo-boilerplate",
     infoPlist: {
       CFBundleDevelopmentRegion: "ja",
@@ -55,5 +53,5 @@ export default (): ExpoConfig => ({
     fallbackToCacheTimeout: 0,
   },
   userInterfaceStyle: "automatic",
-  version: APP_VERSION,
+  version,
 });
