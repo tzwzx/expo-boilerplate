@@ -13,15 +13,9 @@ mock.module("react-native", () => ({
     select: (objs: Record<string, unknown>) => objs.ios || objs.default,
   },
   StyleSheet: { create: (s: unknown) => s, flatten: (s: unknown) => s },
-  Text: ({
-    children,
-    ...props
-  }: { children?: React.ReactNode } & Record<string, unknown>) =>
+  Text: ({ children, ...props }: { children?: React.ReactNode } & Record<string, unknown>) =>
     React.createElement("Text", props, children),
-  View: ({
-    children,
-    ...props
-  }: { children?: React.ReactNode } & Record<string, unknown>) =>
+  View: ({ children, ...props }: { children?: React.ReactNode } & Record<string, unknown>) =>
     React.createElement("View", props, children),
   useColorScheme: () => "light",
 }));
@@ -44,10 +38,7 @@ GlobalRegistrator.register();
 // Suppress the react-test-renderer deprecation warning used internally by @testing-library/react-native
 const originalConsoleError = console.error;
 console.error = (...args: unknown[]) => {
-  if (
-    typeof args[0] === "string" &&
-    args[0].includes("react-test-renderer is deprecated")
-  ) {
+  if (typeof args[0] === "string" && args[0].includes("react-test-renderer is deprecated")) {
     return;
   }
   originalConsoleError(...args);
@@ -64,11 +55,11 @@ mock.module("expo-router", () => ({
   Link: "Link",
   Stack: Object.assign(
     mock(() => null),
-    { Screen: mock(() => null) }
+    { Screen: mock(() => null) },
   ),
   Tabs: Object.assign(
     mock(() => null),
-    { Screen: mock(() => null) }
+    { Screen: mock(() => null) },
   ),
   router: {
     back: mock(),
@@ -127,8 +118,7 @@ mock.module("expo-constants", () => ({
 }));
 
 mock.module("react-native-gesture-handler", () => ({
-  GestureHandlerRootView: ({ children }: { children: React.ReactNode }) =>
-    children,
+  GestureHandlerRootView: ({ children }: { children: React.ReactNode }) => children,
 }));
 
 mock.module("react-native-reanimated", () => ({
