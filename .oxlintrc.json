@@ -4,14 +4,6 @@
     "./node_modules/ultracite/config/oxlint/core/.oxlintrc.json",
     "./node_modules/ultracite/config/oxlint/react/.oxlintrc.json"
   ],
-  "categories": {
-    "correctness": "error",
-    "perf": "error",
-    "restriction": "error",
-    "suspicious": "error",
-    "pedantic": "error",
-    "style": "error"
-  },
   "overrides": [
     {
       "files": ["e2e/**/*.{ts,tsx}"],
