@@ -4,23 +4,10 @@ on: [push]
 
 jobs:
   lint:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v6
-
-      - name: Setup Bun
-        uses: ./.github/actions/setup-bun
-
-      - name: Run Oxlint
-        run: bun lint
-
-      - name: Run tsc
-        run: bun tsc
-
-      - name: Run syncpack:lint
-        run: bun syncpack:lint
-
-      - name: Run knip
-        run: bun knip
+    uses: tzwzx/expo-workflows/.github/workflows/lint.yml@main
+    with:
+      commands: |
+        bun lint
+        bun tsc
+        bun syncpack:lint
+        bun knip

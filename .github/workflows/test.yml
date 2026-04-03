@@ -4,20 +4,9 @@ on: [push]
 
 jobs:
   test:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v6
-
-      - name: Setup Bun
-        uses: ./.github/actions/setup-bun
-
-      - name: Run tests
-        run: bun test:unit
-
-      - name: Install Playwright Browsers
-        run: bunx playwright install --with-deps chromium
-
-      - name: Run e2e tests
-        run: bun test:e2e:web
+    uses: tzwzx/expo-workflows/.github/workflows/test.yml@main
+    with:
+      playwright: true
+      commands: |
+        bun test:unit
+        bun test:e2e:web
