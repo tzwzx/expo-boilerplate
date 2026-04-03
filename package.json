@@ -40,6 +40,7 @@
     "expo": "55.0.9",
     "expo-constants": "55.0.9",
     "expo-dev-client": "55.0.19",
+    "expo-insights": "55.0.12",
     "expo-linking": "55.0.9",
     "expo-router": "55.0.8",
     "expo-splash-screen": "55.0.13",
