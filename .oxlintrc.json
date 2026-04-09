@@ -4,17 +4,14 @@
     "./node_modules/ultracite/config/oxlint/core/.oxlintrc.json",
     "./node_modules/ultracite/config/oxlint/react/.oxlintrc.json"
   ],
+  "rules": {
+    "sort-imports": ["error", { "ignoreDeclarationSort": true }]
+  },
   "overrides": [
-    {
-      "files": ["e2e/**/*.{ts,tsx}"],
-      "rules": {
-        "import/no-relative-parent-imports": "off"
-      }
-    },
     {
       "files": ["src/**/*.{ts,tsx}"],
       "rules": {
-        "typescript/no-use-before-define": [
+        "eslint/no-use-before-define": [
           "error",
           {
             "variables": false,
