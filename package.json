@@ -29,8 +29,8 @@
     "test:unit:coverage": "bun test --coverage",
     "test:e2e:web": "playwright test",
     "test:e2e:app": "time maestro test e2e/app/",
-    "codesweep:check": "bunx codesweep check",
-    "codesweep:fix": "bunx codesweep fix",
+    "codesweep:check": "codesweep check",
+    "codesweep:fix": "codesweep fix",
     "react-doctor": "bunx -y react-doctor@latest .",
     "rulesync": "bunx rulesync generate",
     "postinstall": "lefthook install && bun rulesync"
