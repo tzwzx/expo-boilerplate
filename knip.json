@@ -3,5 +3,5 @@
   "project": ["src/**/*.{js,jsx,ts,tsx}"],
   "expo": true,
   "ignoreBinaries": ["maestro", "xcrun"],
-  "ignoreDependencies": ["expo-mcp", "ultracite"]
+  "ignoreDependencies": ["expo-mcp"]
 }
