@@ -4,6 +4,4 @@
   "features": ["rules", "hooks"],
   "baseDirs": ["."],
   "delete": true,
-  "verbose": false,
-  "silent": false,
 }
